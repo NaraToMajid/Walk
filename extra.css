@@ -1,6 +1,0 @@
-/* extra.css · Walk v1.6 · tombol lihat sandi */
-#afr .pw{position:relative;display:flex;flex:1 1 150px;min-width:0}
-#afr .pw .in{flex:1;width:100%;padding-right:44px}
-#afr .pwb{position:absolute;right:6px;top:50%;transform:translateY(-50%);width:34px;height:34px;padding:0;border:0;border-radius:50%;background:none;color:#fff;opacity:.8;display:grid;place-items:center;cursor:pointer}
-#afr .pwb:active{opacity:1;background:rgba(255,255,255,.12)}
-#afr .pwb svg{width:18px;height:18px}
