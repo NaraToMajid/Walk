@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>Walk</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/extra.css">
+</head><body>
+<canvas id="c"></canvas>
+<button id="mbtn" class="ib gl" aria-label="Musik"><i data-lucide="music"></i></button>
+<div id="mpan" class="pn gl" hidden><div class="ph"><b>Musik</b><span id="np">Belum ada lagu</span></div><div id="mc"><button id="mpv" aria-label="Sebelumnya"><i data-lucide="skip-back"></i></button><button id="mpp" aria-label="Putar"><i data-lucide="play"></i></button><button id="mnx" aria-label="Berikutnya"><i data-lucide="skip-forward"></i></button></div><div id="ml"></div><div id="mft"><button id="pdir">Pilih folder</button><button id="pfil">Pilih file</button></div></div>
+<audio id="bgm" preload="metadata"></audio>
+<input id="pfl" type="file" accept="audio/*,.mp3" multiple hidden><input id="pfo" type="file" webkitdirectory multiple hidden>
+<div id="hud"><div id="onl"></div>
+<div id="tr"><button id="cbtn" class="ib gl"><i data-lucide="eye"></i><span>POV</span></button><button id="kbtn" class="ib gl" aria-label="Skin"><i data-lucide="shirt"></i></button><button id="sbtn" class="ib gl" aria-label="Pengaturan"><i data-lucide="settings"></i></button></div>
+<div id="jb"><div id="jk"></div></div>
+<div id="acts"><button id="sit" class="ab gl" hidden></button><button id="pk" class="ab gl" hidden></button><button id="sw" class="ab gl" hidden></button><button id="dr" class="ab gl" hidden></button></div>
+<div id="rc"><button id="chb" class="hb gl"><i data-lucide="message-circle"></i><small>Chat</small></button><button id="ebtn" class="hb gl"><i data-lucide="smile"></i><small>Emosi</small></button><button id="vbtn" class="hb gl"><i data-lucide="mic"></i><small>Tahan</small></button><button id="run" class="hb gl"><i data-lucide="footprints"></i><small>Lari</small></button><button id="jmp" class="hb gl"><i data-lucide="chevrons-up"></i><small>Lompat</small></button></div>
+<div id="layBar" class="gl" hidden><span>Geser tombol &amp; joystick</span><button id="layS">Simpan</button><button id="layR">Reset</button><button id="layC">Batal</button></div><div id="dock"><button id="rbtn" class="ib gl" aria-label="Rekam gameplay"><i data-lucide="circle-dot" class="i-on"></i><i data-lucide="square" class="i-off"></i><span id="rt">00:00</span></button><button id="fbtn" class="ib gl" aria-label="Facecam"><i data-lucide="camera"></i></button></div>
+<div id="epan" class="pn gl" hidden></div>
+<div id="cin" hidden><input id="ci" class="gl" maxlength="80" placeholder="Ketik pesan…" autocomplete="off"><button id="cs" class="gl">Kirim</button></div>
+<div id="clog"></div><div id="vtag" class="gl"><i data-lucide="mic"></i><span>Berbicara…</span></div><div id="toast" class="gl"></div>
+<div id="kpan" class="pn gl" hidden></div>
+<div id="spn" class="pn gl" hidden><label class="row"><span>Musik</span><input id="vm" type="range" min="0" max="100"></label><label class="row"><span>Suara alam</span><input id="va" type="range" min="0" max="100"></label><label class="row"><span>Suara pemain</span><input id="vv" type="range" min="0" max="100"></label><label class="row"><span>Gyro (sensor gerak)</span><input id="gy" type="checkbox"></label><button id="quit">Keluar</button><small>walk version 1.6 created by almajid</small></div></div>
+<div id="ld" class="ov"><div>Memuat dunia…</div><div id="lb"><i></i></div><small id="lt2">0%</small></div><div id="menu" class="ov"><h1>Walk</h1><button id="go" disabled>Memuat…</button><div id="maps"></div><small id="ver">Versi 1.6 Created By Almajid</small><small id="hint">Joystick kiri · geser layar untuk melihat · tahan tombol mikrofon untuk bicara</small></div>
+<div id="rot" class="ov"><svg viewBox="0 0 24 24" fill="none" stroke="#e8eefc" stroke-width="1.2"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 19h2"/></svg><span>Miringkan layar ke landscape</span></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.118.0/dist/umd/supabase.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.383.0/dist/umd/lucide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mp4-muxer@5.1.3/build/mp4-muxer.js"></script>
+<script>window.lucide&&lucide.createIcons()</script>
+<script src="js/skins.js" defer></script>
+<script src="js/script.js" defer></script>
+<script src="js/recorder.js" defer></script>
+<script src="js/auth-ui.js" defer></script>
+</body></html>
